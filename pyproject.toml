@@ -1,0 +1,50 @@
+[project]
+name = "comfyui-h3-materialhub"
+version = "1.0.0"
+description = "MiniMax H3 reference material hub for ComfyUI: upload 9 images, 3 videos and 3 audios inside one node — zero wiring."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ComfyUI-H3-MaterialHub contributors" }]
+keywords = [
+    "comfyui",
+    "comfyui-custom-node",
+    "minimax",
+    "h3",
+    "reference-to-video",
+    "video-generation",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/zdwl001/ComfyUI-H3-MaterialHub"
+Repository = "https://github.com/zdwl001/ComfyUI-H3-MaterialHub"
+Issues = "https://github.com/zdwl001/ComfyUI-H3-MaterialHub/issues"
+
+[tool.comfy]
+# Metadata for publishing to the ComfyUI Registry (https://registry.comfy.org/).
+DisplayName = "H3 Material Hub"
+# PublisherId = "your-publisher-id"  # required by `comfy node publish`
+# Icon = "https://raw.githubusercontent.com/zdwl001/ComfyUI-H3-MaterialHub/main/assets/icon.png"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = [".ruff_cache", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# Chinese full-width punctuation in docstrings/comments is intentional.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.format]
+# Code fences in the READMEs are illustrative snippets, not Python sources.
+exclude = ["*.md"]
