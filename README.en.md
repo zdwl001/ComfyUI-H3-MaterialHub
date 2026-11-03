@@ -31,6 +31,18 @@ This plugin only changes **how materials get in**, never **how they are processe
 
 ---
 
+## Preview
+
+**Material panel**: 9 image slots + 3 video slots + 3 audio slots, with prompt tags shown in each slot.
+
+<img src="assets/node-panel.png" width="520" alt="H3 Material Hub node panel">
+
+**Used in a full workflow**: no material links — only the clip / vae / audio_vae connections.
+
+<img src="assets/workflow-overview.png" width="960" alt="H3 Material Hub wired into a ComfyUI workflow">
+
+---
+
 ## How it works
 
 Uploaded files are read by the official loaders into the exact types the official node expects,

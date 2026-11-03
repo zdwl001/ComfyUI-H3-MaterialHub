@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Node-panel and full-workflow preview screenshots in both READMEs.
+
 ## [1.0.0] - 2026-11-03
 
 ### Added
